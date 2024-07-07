@@ -25,7 +25,7 @@ const HeroSection = ({ onReferClick }) => {
         {images.map((image, index) => (
           <img
             key={index}
-            src={ Baseurl + image}
+            src={ image}
             alt={`Slide ${index}`}
             className={`absolute top-0 left-0 w-full h-full transition-opacity duration-1000 ${
               index === currentImageIndex ? 'opacity-100' : 'opacity-0'
